@@ -30,3 +30,10 @@ for article in articles:
 # search_field.send_keys("Olabode")  
 # search_field.send_keys(Keys.RETURN)  
 # assert "Looking Back at Android Security in 2016" in driver.page_source   driver.close()`  
+
+import base64
+
+def decrip_link_protetion(link):
+    encoded = str(url.split("/?v=")[1])
+    decoded = base64.b64decode(str.encode(encoded))
+    return decoded;
