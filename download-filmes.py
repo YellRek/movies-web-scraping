@@ -4,9 +4,9 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options  
 
 chrome_options = Options()  
-#chrome_options.add_argument("--headless")  
+chrome_options.add_argument("--headless")  
 # chrome_options.binary_location = '/Applications/Google Chrome   Canary.app/Contents/MacOS/Google Chrome Canary'
-driver = webdriver.Chrome(executable_path="C:\\Users\\Jonatas\\Documents\\Python Scripts\\chromedriver.exe", chrome_options=chrome_options)
+driver = webdriver.Chrome(executable_path="C:\\webdriver\\chromedriver.exe", chrome_options=chrome_options)
 driver.get("https://torrentsfilmeshd.org/")
 
 articles = driver.find_elements_by_tag_name("article")
